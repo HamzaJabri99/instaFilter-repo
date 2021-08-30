@@ -33,6 +33,7 @@ export default {
   color: #240046;;
   padding: 0.5rem 1rem;
   border-top: 3px solid rgb(44, 42, 42);
+  margin-bottom: 1rem;
 }
 .filter-panel-title {
   font-weight: 500;

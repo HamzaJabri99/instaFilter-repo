@@ -2,7 +2,7 @@
     <div class="control-panel flex-1 flexbox flexdir-col">
      <ImageLoader/>
      <FilterPanel/>
-   <SaveImagePanel/>
+     <SaveImagePanel/>
     </div>
 </template>
 
