@@ -2,19 +2,19 @@
     <div class="control-panel flex-1 flexbox flexdir-col">
      <ImageLoader/>
      <FilterPanel/>
-     <ImageType></ImageType>
+   <SaveImagePanel/>
     </div>
 </template>
 
 <script>
 import ImageLoader from './ImageLoader'
 import FilterPanel from './filter-panel/FilterPanel'
-import ImageType from '../image_Export/ImageType.vue'
+import SaveImagePanel from './Save-Image/SaveImagePanel'
     export default {
         components:{
             ImageLoader,
             FilterPanel,
-            ImageType
+            SaveImagePanel
         }
     }
 </script>
@@ -22,12 +22,13 @@ import ImageType from '../image_Export/ImageType.vue'
 <style scoped>
 .control-panel{
     border-right: 3px solid black;
-    background: var(--collightblue);
+    background: #c77dff;
+    
 }
 @media screen and (max-width:600px){
     .control-panel{
-    max-width: 50%;
-    
+    min-width: 50%;
+
     }
 }
 </style>

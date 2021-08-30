@@ -72,8 +72,8 @@ import {mapActions} from 'vuex'
 }
 @media screen and (max-width:600px){
     .display-image{
-    max-width: 100%;
-    height: 50%;
+    max-width: 80%;
+    max-height: 50%;
     }
 }
 </style>

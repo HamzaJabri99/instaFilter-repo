@@ -16,11 +16,17 @@
 <style scoped>
 .navbar-brand{
     padding-left: 1.5rem;
+    
 }
 h2{
-  
-  background: -webkit-linear-gradient(rgb(51, 255, 238), rgb(251, 122, 219));
+  font-weight: bold;
+  background: -webkit-linear-gradient(#c77dff,#e0aaff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width:600px) {
+       .navbar-brand{
+       font-weight: 100; 
+    }
 }
 </style>

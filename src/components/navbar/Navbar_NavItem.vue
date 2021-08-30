@@ -12,10 +12,7 @@
 <style scoped>
 .nav-item{
     width: 9rem;
+
 }
-@media screen and (max-width:600px){
-    .nav-item{
-    width: 4rem;
-}
-}
+
 </style>

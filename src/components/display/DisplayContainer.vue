@@ -55,7 +55,7 @@ import DisplayCanvas from './DisplayCanvas.vue'
 
 <style scoped>
 .display-container{
-    background-color: rgba(196, 196, 196,0.1);
+    background-color: #e0aaff;
     color: var(--colblack);
     
 }

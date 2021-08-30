@@ -1,10 +1,9 @@
 <template>
     <nav class="navbar-outer flexbox">
-    <navbar-brand title="InstaFilter" class="brand"></navbar-brand>
-    
-    <navbar-item text="Home"></navbar-item>
-    <navbar-item text="About"></navbar-item>
-    <navbar-item text="Contact"></navbar-item>
+    <navbar-brand title="InstaFilter" class="brand"/>    
+    <navbar-item text="Home" class="nav-item"></navbar-item>
+    <navbar-item text="About" class="nav-item"></navbar-item>
+    <navbar-item text="Contact" class="nav-item"></navbar-item>
     
 
     </nav>
@@ -24,17 +23,30 @@ import Navbar_NavItem from './Navbar_NavItem'
 <style scoped>
 .navbar-outer{
     height: 60px;
-    background-color: var(--coldarkblue);
+    background-color:#240046;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    gap: -10px
+    
 }
 @media screen and (max-width: 600px){
-.navbar-outer{
-    width: 100%;
-    font-size: 0.84rem;
-    padding: 0.5rem;
-}
+    .navbar-outer{
+  display: flex;
+  gap: 18px;
+    }
 .brand{
-    margin-right: 0.5rem;
+    margin-left: 0.3rem;
     padding: 0;
+    font-size: 0.8rem;
+}
+    .nav-item{
+    width: rem;
+    font-size: 0.8rem;
+    overflow:hidden;
+    margin-left: 1rem;
+    
+    gap: 18px;
 }
 }
 </style>

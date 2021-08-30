@@ -24,7 +24,9 @@
 <style scoped>
 .image-loader{
     padding: .5rem 1rem;
-    color: var(--colblack);
+    color: #240046;
+    font-weight: bolder;
+    
 }
 label{
     font-size: 170%;
@@ -37,6 +39,7 @@ label{
     margin: 1rem 0rem 1.6rem 0rem;
     border: 2px solid #212121;
     border-radius: 5px;
+    
 }
 @media screen and (max-width:600px){
  

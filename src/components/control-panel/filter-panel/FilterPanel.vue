@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .filter-panel {
-  color: black;
+  color: #240046;;
   padding: 0.5rem 1rem;
   border-top: 3px solid rgb(44, 42, 42);
 }
@@ -38,5 +38,6 @@ export default {
   font-weight: 500;
   font-size: 170%;
   margin-bottom: 1rem;
+  font-weight: bolder;
 }
 </style>
