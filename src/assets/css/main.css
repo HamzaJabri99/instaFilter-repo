@@ -1,0 +1,30 @@
+:root{
+  /* Project colors*/   
+   --colblack:#020024;
+   --colteal:#2f7575;
+   --colpurple:#6a1b85;
+   --collightblue:#74b8c6;
+   --coldarkblue:#353b50;
+   /*Filter Vars*/
+   /* --brightness: 100%;
+   --contrast: 100%;
+   --grayscale: 0%;
+   --hue-rotate: 0deg;
+   --invert: 0%;
+   --saturate: 100%;
+   --sepia: 0%; */
+   
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+ font-size: 20px;
+ height: 100vh;
+ color: #f7f7f7;
+ font-family: sans-serif;
+}
