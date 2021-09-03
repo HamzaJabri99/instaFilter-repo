@@ -36,7 +36,7 @@ export default {
 }
 .image-name-label {
   font-weight: 500;
-  font-size: 170%;
+  font-size: 150%;
   margin-bottom: 1rem;
   font-weight: bolder;
 }
@@ -45,7 +45,7 @@ export default {
   font-size: 1.1rem;
   padding: 0.1rem 0.25rem;
   outline: none;
-  margin: 1rem 0rem 1.6rem 0rem;
+  margin: 1rem 0rem 0rem 0rem;
   border: 2px solid #212121;
   border-radius: 5px;
 }

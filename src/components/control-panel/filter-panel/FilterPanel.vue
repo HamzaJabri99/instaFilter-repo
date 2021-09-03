@@ -30,14 +30,14 @@ export default {
 
 <style scoped>
 .filter-panel {
-  color: #240046;;
+  color: #240046;
   padding: 0.5rem 1rem;
   border-top: 3px solid rgb(44, 42, 42);
   margin-bottom: 1rem;
 }
 .filter-panel-title {
   font-weight: 500;
-  font-size: 170%;
+  font-size: 150%;
   margin-bottom: 1rem;
   font-weight: bolder;
 }
