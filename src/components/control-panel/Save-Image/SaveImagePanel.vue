@@ -1,18 +1,21 @@
 <template>
- <div class="save-image-panel flex-1">
-     from image Panel
- </div>
+  <div class="save-image-panel flex-1">
+    <CustomImageName />
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+import CustomImageName from "./CustomImageName";
+export default {
+  components: {
+    CustomImageName,
+  },
+};
 </script>
 
 <style scoped>
-.save-image-panel{
-    min-height: 7rem;
-    border-top: 3px solid black;
+.save-image-panel {
+  min-height: 7rem;
+  border-top: 3px solid black;
 }
 </style>

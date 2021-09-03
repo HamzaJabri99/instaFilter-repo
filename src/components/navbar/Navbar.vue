@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar-outer flexbox">
+    <nav class="navbar-outer flexbox flex">
     <navbar-brand title="InstaFilter" class="brand"/>    
     <navbar-item text="Home" class="nav-item"></navbar-item>
     <navbar-item text="About" class="nav-item"></navbar-item>
@@ -22,12 +22,13 @@ import Navbar_NavItem from './Navbar_NavItem'
 
 <style scoped>
 .navbar-outer{
-    height: 60px;
+    min-height: 50px;
     background-color:#240046;
     font-weight: bold;
     width: 100%;
     display: flex;
-    gap: -10px
+    gap: 0px;
+    overflow: hidden;
     
 }
 @media screen and (max-width: 600px){
@@ -45,7 +46,6 @@ import Navbar_NavItem from './Navbar_NavItem'
     font-size: 0.8rem;
     overflow:hidden;
     margin-left: 1rem;
-    
     gap: 18px;
 }
 }
