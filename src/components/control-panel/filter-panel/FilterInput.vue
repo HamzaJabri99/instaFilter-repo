@@ -1,7 +1,7 @@
 <template>
   <div class="filter-input">
     <div class="flex flexbox flexbox-space-between">
-      <label :for="filter.name"> {{ filter.name | capitalize}}</label>
+      <label :for="filter.name"> {{ filter.name | capitalize }}</label>
       <span> {{ filter.current }}%</span>
     </div>
 
@@ -23,13 +23,13 @@ import { mapActions } from "vuex";
 export default {
   props: ["filter", "index"],
   filters: {
-  capitalize: function (value) {
-    if (!value) return ''
+    capitalize: function(value) {
+      if (!value) return "";
 
-    value = value.toString()
-    return value.charAt(0).toUpperCase() + value.slice(1)
-  }
-},
+      value = value.toString();
+      return value.charAt(0).toUpperCase() + value.slice(1);
+    },
+  },
   methods: {
     ...mapActions(["setFilterValue_STORE"]),
     updateFilterValue(filter) {
@@ -49,8 +49,13 @@ export default {
 label {
   color: var(--colblack);
   display: block;
-  font-size: 110%;
+  font-size: 130%;
   margin-bottom: 0.1rem;
+  font-weight: 600;
+}
+span {
+  font-size: 110%;
+  font-weight: 600;
 }
 .filter-range {
   width: 100%;
@@ -66,8 +71,8 @@ label {
   background: #ffa5ff;
   outline: none;
   opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
   border-radius: 5px;
 }
 
@@ -89,7 +94,7 @@ label {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #04AA6D;
+  background: #04aa6d;
   cursor: pointer;
 }
 </style>

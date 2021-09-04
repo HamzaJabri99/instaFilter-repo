@@ -28,7 +28,7 @@ export default {};
   cursor: pointer;
 }
 .download-btn:active {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
   cursor: pointer;
 }
 </style>

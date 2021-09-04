@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap");
 :root {
   /* Project colors*/
   --colblack: #020024;
@@ -22,8 +23,8 @@
 }
 html,
 body {
-  font-size: 20px;
+  font-size: 17px;
   height: 100vh;
   color: #f7f7f7;
-  font-family: sans-serif;
+  font-family: "Oxygen", sans-serif;
 }
