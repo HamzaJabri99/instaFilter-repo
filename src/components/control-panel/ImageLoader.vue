@@ -27,7 +27,7 @@ export default {
   font-weight: bolder;
 }
 label {
-  font-size: 150%;
+  font-size: 180%;
   margin-bottom: 10rem;
 }
 .image-loader-input {

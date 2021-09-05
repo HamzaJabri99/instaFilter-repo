@@ -10,6 +10,7 @@ export default new Vuex.Store({
       height: 0,
       source: "",
       customImageName: "",
+      filterString: "",
     },
     imageSource: "",
     filters: [
@@ -92,6 +93,9 @@ export default new Vuex.Store({
     setCustomImageName_MUTA(state, payload) {
       state.image.customImageName = payload;
     },
+    setFilterString_MUTA(state, payload) {
+      state.image.filterString = payload;
+    },
   },
   actions: {
     //payload = imageSource
@@ -103,6 +107,9 @@ export default new Vuex.Store({
     },
     setImageSize_STORE(context, payload) {
       context.commit("setImageSize_MUTA", payload);
+    },
+    setFilterString_STORE(context, payload) {
+      context.commit("setFilterString_MUTA", payload);
     },
   },
 });

@@ -46,12 +46,15 @@ export default {
 </script>
 
 <style scoped>
+.filter-input {
+  padding-bottom: 10px;
+}
 label {
   color: var(--colblack);
   display: block;
-  font-size: 130%;
+  font-size: 115%;
   margin-bottom: 0.1rem;
-  font-weight: 600;
+  font-weight: bold;
 }
 span {
   font-size: 110%;

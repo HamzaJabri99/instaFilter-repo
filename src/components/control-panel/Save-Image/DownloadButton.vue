@@ -1,11 +1,58 @@
 <template>
   <div class="download-button flexbox flex-1  flex-justify-end">
-    <button class="download-btn">Download</button>
+    <button class="download-btn" @click="downloadImage">Download</button>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    image() {
+      return this.$store.getters.getImage;
+    },
+  },
+  methods: {
+    downloadImage() {
+      //const { source, width, height, filterString } = this.image;
+      const imageToDownload = new Image(
+        this.image.width.substring(0, this.image.width.length),
+        this.image.height.substring(0, this.image.height.length - 2)
+      );
+      imageToDownload.onload = () => {
+        //console.log(imageToDownload.src);
+        let canvas = document.createElement("canvas");
+        canvas.width = this.image.width.substring(
+          0,
+          this.image.width.length - 2
+        );
+        canvas.height = this.image.height.substring(
+          0,
+          this.image.height.length - 2
+        );
+        const ctx = canvas.getContext("2d");
+        ctx.filter = this.image.filterString;
+        ctx.drawImage(
+          imageToDownload,
+          0,
+          0,
+          this.image.width.substring(0, this.image.width.length),
+          this.image.height.substring(0, this.image.height.length - 2)
+        );
+        console.log(canvas);
+        console.log(ctx);
+        canvas.toBlob((blob) => {
+          console.log(blob);
+          const link = document.createElement("a");
+          const url = URL.createObjectURL(blob);
+          link.setAttribute("href", url);
+          link.setAttribute("download", "filtered_image.png");
+          link.click();
+        });
+      };
+      imageToDownload.src = this.image.source;
+    },
+  },
+};
 </script>
 
 <style scoped>
